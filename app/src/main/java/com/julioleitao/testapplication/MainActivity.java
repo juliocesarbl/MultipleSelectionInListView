@@ -33,7 +33,14 @@ public class MainActivity extends AppCompatActivity {
         listView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
 
         listView.setAdapter(adapter);
+        for(int i = 0; i < listView.getCount(); i++)
+        {
+            listView.setItemChecked(i,true);
+        }
+
     }
+
+
     public void showSelected(View view)
     {
         String selected = "";
